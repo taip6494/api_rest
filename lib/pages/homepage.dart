@@ -8,6 +8,18 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Nouvelles Application'),
+      ),
+      body: Container(
+        child: ListView.builder(itemBuilder: (context, index) {
+          return Container(
+            height: 100,
+            color: Colors.red,
+          );
+        }),
+      ),
+    );
   }
 }
